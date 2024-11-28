@@ -34,4 +34,16 @@ public class TiendaDeRopa{
     public void alternarVendeCamisetas(){
         vendeCamisetas =!vendeCamisetas;        //Cambia si vende camisetas o no
     }
+
+    public void imprimirEstado(){
+        System.out.println("El nombre de la tienda es:"+ nombre);
+        System.out.println("En la tienda trabajan:"+ numeroEmpleados);
+        System.out.println("¿La tienda vende camisetas?"+(vendeCamisetas ? "Sí":"No"));
+    }
+
+    public String getEstado(){
+        return "Nombre de la tienda"+ nombre + ","+
+                "En la tienda trabajan"+ numeroEmpleados + ","+
+                "¿La tienda vende camisetas?"+ (vendeCamisetas? "Sí":"No");        
+    }
 }
