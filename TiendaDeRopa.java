@@ -35,7 +35,7 @@ public class TiendaDeRopa{
         vendeCamisetas =!vendeCamisetas;        //Cambia si vende camisetas o no
     }
 
-    public void imprimirEstado(){
+    public void imprimeDetalles(){
         System.out.println("El nombre de la tienda es: " + nombre + ", en la tienda trabajan: " + numeroEmpleados + ", ¿La tienda vende camisetas? " + (vendeCamisetas ? "Sí" : "No"));
     }
 
