@@ -11,8 +11,8 @@ public class TiendaDeRopa{
         vendeCamisetas = true;
     }
 
-    public String getNombre(String nombreTienda){
-        return nombreTienda;    //Devuelve el nombre de la tienda
+    public String getNombre(){
+        return nombre;    //Devuelve el nombre de la tienda
     }
 
     public int getNumeroEmpleados(){
@@ -36,14 +36,12 @@ public class TiendaDeRopa{
     }
 
     public void imprimirEstado(){
-        System.out.println("El nombre de la tienda es:"+ nombre);
-        System.out.println("En la tienda trabajan:"+ numeroEmpleados);
-        System.out.println("¿La tienda vende camisetas?"+(vendeCamisetas ? "Sí":"No"));
+        System.out.println("El nombre de la tienda es: " + nombre + ", en la tienda trabajan: " + numeroEmpleados + ", ¿La tienda vende camisetas? " + (vendeCamisetas ? "Sí" : "No"));
     }
 
     public String getEstado(){
         return "Nombre de la tienda"+ nombre + ","+
-                "En la tienda trabajan"+ numeroEmpleados + ","+
-                "¿La tienda vende camisetas?"+ (vendeCamisetas? "Sí":"No");        
+        "En la tienda trabajan"+ numeroEmpleados + ","+
+        "¿La tienda vende camisetas?"+ (vendeCamisetas? "Sí":"No");        
     }
 }
